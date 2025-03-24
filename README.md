@@ -57,4 +57,4 @@ Describe the major technical or non-technical challenges your team encountered.
 
 ## 👥 Team
 - **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Himesh Maniyar** - [GitHub](https://github.com/Himesh-29) | [LinkedIn](https://www.linkedin.com/in/himesh-maniyar/)
