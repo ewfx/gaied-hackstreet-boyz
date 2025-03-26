@@ -18,11 +18,8 @@ A Gen AI Email and Document Classification System is an AI-powered solution that
 
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
-
-![Screenshot 1](link-to-image)
+📹 [Video Demo](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/artifacts/demo/Gaied-hackstreet-boyz.mov)  
+🖼️ [Architecture](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/artifacts/arch/Flowchart.pdf)
 
 
 ## 💡 Inspiration
