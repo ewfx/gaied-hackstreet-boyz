@@ -1,0 +1,6 @@
+Transaction ID: TXN20250325001  
+Date: March 25, 2025  
+Sender: ABC Corporation (987654321)  
+Receiver: [Bank Name] Loan Repayment Account  
+Amount: $250,000  
+Status: Completed  
