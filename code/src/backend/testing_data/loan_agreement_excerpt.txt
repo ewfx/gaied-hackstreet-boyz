@@ -1,0 +1,6 @@
+Loan Agreement No: LA-2023-001  
+Borrower: ABC Corporation  
+Loan Amount: $2,000,000  
+Repayment Schedule: Monthly Principal & Interest  
+Current Outstanding Principal: $1,500,000  
+This payment of $250,000 is part of the scheduled principal repayment.  

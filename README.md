@@ -1,4 +1,4 @@
-# 🚀 GEN AI Document Classification System
+# 🚀 GEN AI Email and Document Classification System
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -14,7 +14,7 @@
 ---
 
 ## 🎯 Introduction
-A Gen AI Document Classification System is an AI-powered solution that automatically analyzes, categorizes, and organizes documents based on their content, structure, and context. Utilizing natural language processing (NLP) and machine learning, the system can classify documents into predefined categories Adjustment, AU Transfer, Closing Notice, Commitment Change, Fee Payment, Money Movement-Inbound, Money Movement-Outbound. It can extract key information, detect document intent, and in future route files to the appropriate workflows. This enhances efficiency, improves document retrieval, and streamlines business processes by reducing manual sorting and classification efforts.
+A Gen AI Email and Document Classification System is an AI-powered solution that automatically analyzes, categorizes, and organizes documents based on their content, structure, and context. Utilizing natural language processing (NLP) and machine learning, the system can classify documents into predefined categories Adjustment, AU Transfer, Closing Notice, Commitment Change, Fee Payment, Money Movement-Inbound, Money Movement-Outbound. It can extract key information, detect document intent, and in future route files to the appropriate workflows. This enhances efficiency, improves document retrieval, and streamlines business processes by reducing manual sorting and classification efforts.
 
 
 ## 🎥 Demo
