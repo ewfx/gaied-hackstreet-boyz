@@ -49,33 +49,33 @@ AI-driven classification scales effortlessly with business growth, reducing depe
 The Document Classifier processes emails and their attachments to classify them into relevant request types and sub-request types using a combination of text extraction, embedding similarity checks, and LLM-based classification (Gemini Pro 1.5). 
 
 * Key Features
-- Accepts emails and attachments as input
-- Extracts text from .pdf, .doc, .docx, and .eml files
-- Uniforms extracted text for consistency
-- Uses *Gemini Pro 1.5* to classify text into request types and sub-request types
-- Maintains a database of prior classified requests
-- Uses *cosine similarity (all-MiniLM-L6-v2)* to detect duplicate requests
-- If similarity threshold < 0.7, calls *Gemini LLM* for classification
-- Provides classification results with extracted text, request type, sub-request type, reasoning, and duplicate status
+   - Accepts emails and attachments as input
+   - Extracts text from .pdf, .doc, .docx, and .eml files
+   - Uniforms extracted text for consistency
+   - Uses *Gemini Pro 1.5* to classify text into request types and sub-request types
+   - Maintains a database of prior classified requests
+   - Uses *cosine similarity (all-MiniLM-L6-v2)* to detect duplicate requests
+   - If similarity threshold < 0.7, calls *Gemini LLM* for classification
+   - Provides classification results with extracted text, request type, sub-request type, reasoning, and duplicate status
 
 * Architecture Flow
-1. *Input Handling*: Accepts email and attachments at endpoint /classify
-2. *Text Extraction*: Parses files from a sample dataset for initial classification
-3. *Uniform Text Processing*: Ensures consistency in extracted content
-4. *Database Lookup*: Appends request types/sub-types from stored dataset
-5. *New Input Processing*: Parses the incoming email and attachments
-6. *Duplicate Check*: Compares embeddings with cosine similarity
-7. *Classification*:
-   - If duplicate found (>0.7 similarity), retrieve past classification
-   - If no duplicate, call *Gemini LLM* to classify the request
-8. *Output Response*: json format
-   {
-     "extracted_text": "...",
-     "duplicate_found": true/false,
-     "request_type": "...",
-     "sub_request_type": "...",
-     "reasoning": "..."
-   }
+   1. *Input Handling*: Accepts email and attachments at endpoint /classify
+   2. *Text Extraction*: Parses files from a sample dataset for initial classification
+   3. *Uniform Text Processing*: Ensures consistency in extracted content
+   4. *Database Lookup*: Appends request types/sub-types from stored dataset
+   5. *New Input Processing*: Parses the incoming email and attachments
+   6. *Duplicate Check*: Compares embeddings with cosine similarity
+   7. *Classification*:
+      - If duplicate found (>0.7 similarity), retrieve past classification
+      - If no duplicate, call *Gemini LLM* to classify the request
+   8. *Output Response*: json format
+      {
+        "extracted_text": "...",
+        "duplicate_found": true/false,
+        "request_type": "...",
+        "sub_request_type": "...",
+        "reasoning": "..."
+      }
 
 * API Endpoint: /classify
    * Request:
