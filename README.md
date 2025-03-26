@@ -24,10 +24,10 @@ A Gen AI Document Classification System is an AI-powered solution that automatic
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-1.Automation & Efficiency:
+1. Automation & Efficiency:
 Businesses receive vast amounts of emails and documents daily. Manually sorting them is time-consuming and prone to errors. AI-powered classification automates this process, reducing workload and improving response times.
 
-2.Advancements in NLP & AI:
+2. Advancements in NLP & AI:
 With breakthroughs in Natural Language Processing (NLP) and transformer models (e.g., GPT, BERT), AI can now understand context, intent, and semantics, enabling accurate classification and routing.
 
 3. Compliance & Risk Management:
@@ -46,10 +46,10 @@ AI-driven classification scales effortlessly with business growth, reducing depe
 Explain the key features and functionalities of your project.
 
 ## 🛠️ How We Built It
-🔹 Frontend: React for building an interactive UI, Lucide React for icons, and Tailwind CSS for responsive and modern styling.
-🔹 Backend: FastAPI for building high-performance APIs, running on Uvicorn as the ASGI server.
-🔹 Database: PostgreSQL for efficient storage, retrieval, and management of classified emails and documents.
-🔹 LLM APIs: Integration with OpenAI, GEMINI, DeepSeek, or Hugging Face models for advanced text analysis, classification, and intent detection.
+* Frontend: React for building an interactive UI, Lucide React for icons, and Tailwind CSS for responsive and modern styling.
+* Backend: FastAPI for building high-performance APIs, running on Uvicorn as the ASGI server.
+* Database: PostgreSQL for efficient storage, retrieval, and management of classified emails and documents.
+* LLM APIs: Integration with OpenAI, GEMINI, DeepSeek, or Hugging Face models for advanced text analysis, classification, and intent detection.
 
 ## 🚧 Challenges We Faced
 1. Doing NER on the input which requires context to reduce load on llm.
@@ -71,8 +71,10 @@ Explain the key features and functionalities of your project.
    ```
 3. Run the project  
    ```sh
-   first time running or new python module has been added to requirements: docker-compose up --build
-   Minor changes to file: docker-compose up --force-recreate
+   # First time running or new python module has been added to requirements
+   docker-compose up --build
+   # Minor changes to file:
+   docker-compose up --force-recreate
    Once the all the services are up, you can access http://localhost:3000/ from your favorite browser to view the landing page
    ```
 
