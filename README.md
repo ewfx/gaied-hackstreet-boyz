@@ -16,12 +16,14 @@
 ## 🎯 Introduction
 A Gen AI Document Classification System is an AI-powered solution that automatically analyzes, categorizes, and organizes documents based on their content, structure, and context. Utilizing natural language processing (NLP) and machine learning, the system can classify documents into predefined categories Adjustment, AU Transfer, Closing Notice, Commitment Change, Fee Payment, Money Movement-Inbound, Money Movement-Outbound. It can extract key information, detect document intent, and in future route files to the appropriate workflows. This enhances efficiency, improves document retrieval, and streamlines business processes by reducing manual sorting and classification efforts.
 
+
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
 📹 [Video Demo](#) (if applicable)  
 🖼️ Screenshots:
 
 ![Screenshot 1](link-to-image)
+
 
 ## 💡 Inspiration
 1. Automation & Efficiency:
@@ -42,14 +44,59 @@ AI-classified documents can be seamlessly integrated with CRM, ERP, and ticketin
 6. Scalability & Cost Reduction:
 AI-driven classification scales effortlessly with business growth, reducing dependency on manual labor and cutting operational costs.
 
+
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+The Document Classifier processes emails and their attachments to classify them into relevant request types and sub-request types using a combination of text extraction, embedding similarity checks, and LLM-based classification (Gemini Pro 1.5). 
+
+* Key Features
+- Accepts emails and attachments as input
+- Extracts text from .pdf, .doc, .docx, and .eml files
+- Uniforms extracted text for consistency
+- Uses *Gemini Pro 1.5* to classify text into request types and sub-request types
+- Maintains a database of prior classified requests
+- Uses *cosine similarity (all-MiniLM-L6-v2)* to detect duplicate requests
+- If similarity threshold < 0.7, calls *Gemini LLM* for classification
+- Provides classification results with extracted text, request type, sub-request type, reasoning, and duplicate status
+
+* Architecture Flow
+1. *Input Handling*: Accepts email and attachments at endpoint /classify
+2. *Text Extraction*: Parses files from a sample dataset for initial classification
+3. *Uniform Text Processing*: Ensures consistency in extracted content
+4. *Database Lookup*: Appends request types/sub-types from stored dataset
+5. *New Input Processing*: Parses the incoming email and attachments
+6. *Duplicate Check*: Compares embeddings with cosine similarity
+7. *Classification*:
+   - If duplicate found (>0.7 similarity), retrieve past classification
+   - If no duplicate, call *Gemini LLM* to classify the request
+8. *Output Response*: json format
+   {
+     "extracted_text": "...",
+     "duplicate_found": true/false,
+     "request_type": "...",
+     "sub_request_type": "...",
+     "reasoning": "..."
+   }
+
+* API Endpoint: /classify
+   * Request:
+      - *Method:* POST
+      - *Input:* Email and Attachments
+      - *Processing:* Extract text → Check duplicates → Classify using LLM
+
+   * Response:
+      - Extracted text
+      - Duplicate request status
+      - Predicted request and sub-request types
+      - Reasoning behind classification
+   This pipeline ensures efficient classification and prevents redundant request handlin
+
 
 ## 🛠️ How We Built It
 * Frontend: React for building an interactive UI, Lucide React for icons, and Tailwind CSS for responsive and modern styling.
 * Backend: FastAPI for building high-performance APIs, running on Uvicorn as the ASGI server.
 * Database: PostgreSQL for efficient storage, retrieval, and management of classified emails and documents.
 * LLM APIs: Integration with OpenAI, GEMINI, DeepSeek, or Hugging Face models for advanced text analysis, classification, and intent detection.
+
 
 ## 🚧 Challenges We Faced
 1. Doing NER on the input which requires context to reduce load on llm.
@@ -78,12 +125,16 @@ Explain the key features and functionalities of your project.
    Once the all the services are up, you can access http://localhost:3000/ from your favorite browser to view the landing page
    ```
 
+
 ## 🏗️ Tech Stack
 - 🔹 Frontend: React + lucide react + Tailwind css
 - 🔹 Backend: FastAPI + uvicorn
 - 🔹 Database: PostgreSQL
 - 🔹 LLM APIs: OpenAI / GEMINI / DeepSeek / HuggingFace 
 
+
 ## 👥 Team
 - **Himesh Maniyar** - [GitHub](https://github.com/Himesh-29) | [LinkedIn](https://www.linkedin.com/in/himesh-maniyar/)
 - **Abijith M G** - [GitHub](https://github.com/abijithmg) | [LinkedIn](https://www.linkedin.com/in/abijithmg/)
+- **Sunny Jain** - [GitHub](https://github.com/sunny34) | [LinkedIn](https://www.linkedin.com/in/sunny-jain-54630636/)
+- **Shyju Adumkudi** - [GitHub](https://github.com/) | [LinkedIn](https://www.linkedin.com/in/shyju-adumkudi-a75413a/)
