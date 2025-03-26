@@ -116,7 +116,8 @@ The Document Classifier processes emails and their attachments to classify them 
    Make sure latest Python version is installed and added to PATH
    Install VScode or any favorite IDE which supports both Python and Javascript libraries. 
    ```
-3. Run the project  
+3. Navigate to code/src directory via <code>cd ./code/src</code>
+4. Run the project
    ```sh
    # First time running or new python module has been added to requirements
    docker-compose up --build
