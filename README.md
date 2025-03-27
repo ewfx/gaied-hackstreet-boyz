@@ -4,11 +4,11 @@
 - [Introduction](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-introduction)
 - [Demo](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-demo)
 - [Inspiration](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-inspiration)
-- [What It Does](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-what-it-does)
-- [How We Built It](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-how-we-built-it)
+- [What It Does](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#%EF%B8%8F-what-it-does)
+- [How We Built It](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#%EF%B8%8F-how-we-built-it)
 - [Challenges We Faced](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-challenges-we-faced)
 - [How to Run](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-how-to-run)
-- [Tech Stack](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-tech-stack)
+- [Tech Stack](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#%EF%B8%8F-tech-stack)
 - [Team](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-team)
 
 ---
