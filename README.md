@@ -114,6 +114,7 @@ The Document Classifier processes emails and their attachments to classify them 
    Install VScode or any favorite IDE which supports both Python and Javascript libraries. 
    ```
 3. Create .env file in ./code/src/backend/ with below content. Note API keys has to be fetched by logging into respective portals. Primarily we are using Gemini.
+   ```sh
    DEEPSEEK_API_KEY=https://platform.deepseek.com/api_keys
    OPENAI_API_KEY=https://platform.openai.com/api-keys
    HUGGINGFACE_API_KEY=https://huggingface.co/settings/tokens
@@ -123,8 +124,8 @@ The Document Classifier processes emails and their attachments to classify them 
    DB_NAME=emails_db
    DB_HOST=database
    DB_PORT=5432
-
-4. Run the project
+   ```
+5. Run the project
    ```sh
    # Navigate to code/src directory via
    <code>cd ./code/src</code>
