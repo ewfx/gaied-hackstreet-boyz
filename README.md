@@ -110,12 +110,24 @@ The Document Classifier processes emails and their attachments to classify them 
 2. Install dependencies  
    ```sh
    Install docker. Make sure docker destop or daemon is running.
-   Make sure latest Python version is installed and added to PATH
+   Make sure latest Python version is installed and added to PATH [Optopnal] 
    Install VScode or any favorite IDE which supports both Python and Javascript libraries. 
    ```
-3. Navigate to code/src directory via <code>cd ./code/src</code>
+3. Create .env file in ./code/src/backend/ with below content. Note API keys has to be fetched by logging into respective portals. Primarily we are using Gemini.
+   DEEPSEEK_API_KEY=https://platform.deepseek.com/api_keys
+   OPENAI_API_KEY=https://platform.openai.com/api-keys
+   HUGGINGFACE_API_KEY=https://huggingface.co/settings/tokens
+   GEMINI_API_KEY=https://ai.google.dev/gemini-api/docs/api-key
+   DB_USER=GaiedHackstreetBoyz
+   DB_PASSWORD=randomchars
+   DB_NAME=emails_db
+   DB_HOST=database
+   DB_PORT=5432
+
 4. Run the project
    ```sh
+   # Navigate to code/src directory via
+   <code>cd ./code/src</code>
    # First time running or new python module has been added to requirements
    docker-compose up --build
    # Minor changes to file:
@@ -128,6 +140,8 @@ The Document Classifier processes emails and their attachments to classify them 
 - 🔹 Frontend: React + lucide react + Tailwind css
 - 🔹 Backend: FastAPI + uvicorn
 - 🔹 Database: PostgreSQL
+- 🔹 Testing: Pytest for python and Jest for React.
+- 🔹 Deployment: Docker compose for multi service build and deployment
 - 🔹 LLM APIs: OpenAI / GEMINI / DeepSeek / HuggingFace 
 
 
