@@ -1,15 +1,15 @@
 # 🚀 GEN AI Email and Document Classification System
 
 ## 📌 Table of Contents
-- [Introduction](-#introduction)
-- [Demo](-#demo)
-- [Inspiration](-#inspiration)
-- [What It Does](-#what-it-does)
-- [How We Built It](-#how-we-built-it)
-- [Challenges We Faced](-#challenges-we-faced)
-- [How to Run](-#how-to-run)
-- [Tech Stack](-#tech-stack)
-- [Team](-#team)
+- [Introduction](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-introduction)
+- [Demo](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-demo)
+- [Inspiration](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-inspiration)
+- [What It Does](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-what-it-does)
+- [How We Built It](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-how-we-built-it)
+- [Challenges We Faced](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-challenges-we-faced)
+- [How to Run](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-how-to-run)
+- [Tech Stack](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-tech-stack)
+- [Team](https://github.com/ewfx/gaied-hackstreet-boyz/blob/main/README.md#-team)
 
 ---
 
